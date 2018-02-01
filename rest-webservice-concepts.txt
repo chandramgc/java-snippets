@@ -1,0 +1,42 @@
+Web Service
+										Soap 								Rest (Representational State Transtion)
+	Http exchange (Format of data)		XML									XML, JSON, TEXT, ANY
+	Protocal							Soap protocal						None
+	Service Definition 					WSDL								None (VADAL not used right now)
+	(List of service in/out param)
+	Specification (decatation of rules)	Soap web service specification		None
+	
+Http (Hyper Text Trasfer Protocal)
+
+Resource Location 	- Web api (address for rest api),every api should be identified by resource based uri
+
+HTTP Methods
+	Get		- Get data
+	Post	- Submit data
+	Put		- Submit data
+	Delete	- Delete data
+
+Metadata
+	HTTP Status Code	- 200 (sccess), 400 (Failed), 404 (Not found)
+	Content Type		- Format of message 
+
+HATEOAS (Hypermedia As The Engine Of Application State)
+	Keep the resource api in the response
+	rel attribute
+		Attribute specifed to any link that specifed relationship b/w current docoument and link docoument
+		Example: <link rel="stylesheet" href="bootstrap.css"/>
+		
+Richardson Maturity Model
+	Level 0 (Swamp of POX-Plain old xml)
+		1 uri (All the information in resource response)
+	Level 1
+		Individual URI's for each resouces
+	Level 2
+		Individual URI's for each resouces
+		HTTP Methods
+		Status Code
+	Level 3
+		Individual URI's for each resouces
+		HTTP Methods
+		Status Code
+		HATEOAS (Resource uri in resouces)
